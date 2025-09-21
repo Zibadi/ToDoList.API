@@ -1,0 +1,24 @@
+@URL = http://localhost:5200/api
+
+GET {{URL}}/ToDos
+Accept: application/json
+###
+GET {{URL}}/ToDos/6743458f-f75c-4c9b-83eb-9ce01cb958d0
+Accept: application/json
+###
+POST {{URL}}/ToDos
+Content-Type: application/json
+{
+    "Title": "Another Walking..."
+}
+###
+PUT {{URL}}/ToDos/3e39269e-5205-4336-b126-4709b4ff2aee
+Content-Type: application/json
+{
+    "Title": "Running...",
+    "IsDeleted": false
+}
+###
+DELETE {{URL}}/ToDos/6743458f-f75c-4c9b-83eb-9ce01cb958d0
+Accept: application/json
+###

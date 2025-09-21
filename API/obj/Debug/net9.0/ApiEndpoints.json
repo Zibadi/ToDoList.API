@@ -1,0 +1,111 @@
+[
+  {
+    "ContainingType": "API.Endpoints.ToDoEndpoints",
+    "Method": "FindAll",
+    "RelativePath": "api/ToDos",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "API.Endpoints.ToDoEndpoints",
+    "Method": "Create",
+    "RelativePath": "api/ToDos",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "todo",
+        "Type": "Domain.Entities.ToDo",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "API.Endpoints.ToDoEndpoints",
+    "Method": "FindById",
+    "RelativePath": "api/ToDos/{id:guid}",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "API.Endpoints.ToDoEndpoints",
+    "Method": "Update",
+    "RelativePath": "api/ToDos/{id:guid}",
+    "HttpMethod": "PUT",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "todo",
+        "Type": "Domain.Entities.ToDo",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "API.Endpoints.ToDoEndpoints",
+    "Method": "Delete",
+    "RelativePath": "api/ToDos/{id:guid}",
+    "HttpMethod": "DELETE",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  }
+]
