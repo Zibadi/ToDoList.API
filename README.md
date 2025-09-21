@@ -21,8 +21,10 @@ ToDoList/
 │   Infrastructure/            # Data access and external 
 │   Application/               # Business logic and use cases
 │   API/                       # Web API and controllers
+├── .dockerignore              # Docker ignore configuration
 ├── Dockerfile                 # Container configuration
 ├── docker-compose.yaml        # Docker compose configuration
+├── ToDoList.sln               # Solution file
 └── README.md
 ```
 
