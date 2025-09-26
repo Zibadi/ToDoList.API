@@ -10,7 +10,7 @@ namespace Application.Services
             return await todoRepository.GetAllAsync();
         }
 
-        public async Task<ToDo> FindById(Guid id)
+        public async Task<ToDo?> FindById(Guid id)
         {
             return await todoRepository.GetByIdAsync(id);
         }
